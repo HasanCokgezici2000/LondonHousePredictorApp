@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 
 ## Deserialise - unpacking pickle
-with open('rf_houses.sav', 'rb') as file: 
+with open('https://github.com/HasanCokgezici2000/LondonHousePredictorApp/blob/main/rf_houses.sav', 'rb') as file: 
     rf_loaded = pickle.load(file) 
 file.close()
 
