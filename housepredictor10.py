@@ -58,7 +58,7 @@ def main():
     st.write('DataFrame:', df)
 
 def encode_property_type(property_type):
-    encoder = OneHotEncoder(categories=[list(property_type_options.keys())], sparse=False)
+    encoder = OneHotEncoder(categories=[list(property_type_options.keys())])
     encoded = encoder.fit_transform([[property_type]])
     return {key: encoded[0][i] for i, key in enumerate(property_type_options.keys())}
 
